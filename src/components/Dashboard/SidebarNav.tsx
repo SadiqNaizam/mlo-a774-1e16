@@ -59,7 +59,7 @@ const SidebarNav: React.FC = () => {
                   'flex items-center py-2 px-3 rounded-md text-sm font-medium',
                   item.active
                     ? 'bg-primary/10 text-primary'
-                    : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                    : 'text-muted-foreground hover:bg-gray-200/50 hover:text-foreground'
                 )}
               >
                 <item.icon className="mr-3 h-5 w-5" />
@@ -76,7 +76,7 @@ const SidebarNav: React.FC = () => {
             <li key={`${item.name}-${index}`}>
               <a
                 href={item.href}
-                className="flex items-center py-2 px-3 rounded-md text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
+                className="flex items-center py-2 px-3 rounded-md text-sm font-medium text-muted-foreground hover:bg-gray-200/50 hover:text-foreground"
               >
                 <item.icon className="mr-3 h-5 w-5" />
                 {item.name}
